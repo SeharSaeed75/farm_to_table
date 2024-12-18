@@ -1,0 +1,111 @@
+body {  
+    font-family: 'Poppins', sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-image: url("bg/bg9.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;  
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 10px;
+    padding-top: 0%;
+}
+
+nav a {  
+    margin: 0 15px;  
+    color: #f3f6edbb;  
+    text-decoration: none;  
+    font-weight: bold;  
+    font-size: 20px;
+}  
+
+nav a:hover {  
+    text-decoration: underline;
+    text-shadow: 0 0 10px #82bd52, 0 0 20px #f2e7ae, 0 0 30px #e6e7d8;
+}  
+
+header {  
+    display: flex;  
+    justify-content: space-between; /* Push title to the left and nav to the right */
+    align-items: center; /* Vertically align title and nav */
+    background-color: #76711250;  
+    color: #375a31;  
+    padding: 10px 20px; /* Add padding for better spacing */  
+} 
+
+header h1 {  
+    font-size: 30px; 
+    color: rgb(66, 91, 47);
+    text-shadow: 0 0 10px #cfcb8c7c, 0 0 20px #203911, 0 0 30px #e6e7d8; 
+    margin-top: 5px;
+}  
+
+header p {  
+    font-size: 1.2rem;  
+    margin: 10px 0 0; 
+    text-align: center; 
+}
+
+/* Wrapper for section */
+.section {
+    max-width: 100%; /* Full width of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.recipe-grid {
+    display: flex;
+    justify-content: center; /* Horizontally centers the card */
+    align-items: center; /* Vertically centers the card */
+    width: 100%; /* Make sure the grid takes full available width */
+    max-width: 700px; /* Increased the max-width of the grid container */
+    text-align: center; /* Ensures text inside the card is centered */
+}
+
+.recipe-card {
+    text-align: center;
+    background-color: #fff; /* Adds a background color for the card */
+    padding: 15px; /* Reduces padding to make the card smaller */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* A slightly stronger shadow for better visibility */
+    width: 100%; /* Full width of its parent (but constrained by max-width) */
+    max-width: 600px; /* Increased the max-width of the card */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.recipe-card img {
+    width: 600px; /* Prevents image from stretching */
+    height: 250px; /* Maintains aspect ratio */
+    max-width: 100%; /* Ensures the image does not exceed the width of the card */
+    border-radius: 8px; /* Rounds the corners of the image */
+}
+
+
+.recipe-card h3 {
+    font-size: 22px; /* Adjusts heading size */
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    font-size: 14px; /* Adjusts paragraph text size */
+    line-height: 1.5; /* Improves readability */
+    margin-bottom: 15px;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    cursor: pointer;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .recipe-grid {
+        grid-template-columns: 1fr; /* Stack the cards vertically on smaller screens */
+    }
+}
