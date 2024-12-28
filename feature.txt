@@ -1,0 +1,6 @@
+This website is based on the 'agriculture'.
+Having different Web pages like home, info, contact us and harvesteditems.
+Highlighting the havested items:
+Thw website provides different harvested items based on the four seasons.Where the Highlight of each seasons are presented in cards.
+In addition to that, each season's harvested items are presented alongside their benefits and recipe names.
+This small website features agriculture based various harvesteditems.
